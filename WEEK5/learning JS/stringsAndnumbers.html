@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <p id="outputtext"></p>
+
+    <script>
+        var text1 = "20";
+        var text2 = "5";
+
+        var num1 = stringsToNumber(text1);
+        var num2 = stringsToNumber(text2);
+
+        if (isNaN(num1) || isNaN(num2)) {
+            document.getElementById("outputtext").innerHTML = "You have not entered a valid number. Try again.";
+        } else {
+            document.getElementById("outputtext").innerHTML = num1 + num2;
+        }
+
+        function stringsToNumber(text) {
+            return parseInt(text);
+        }
+    </script>
+</body>
+</html>

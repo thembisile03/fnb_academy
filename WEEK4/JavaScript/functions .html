@@ -1,0 +1,25 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1 id="heading" onclick="toggleText(this)">JavaScript</h1>
+    <p id="addition"></p>
+
+    <script>
+        function addNumbers(num1, num2) {
+            return num1 + num2;
+        }
+
+        document.getElementById("addition").innerHTML = addNumbers(5, 32);
+
+        function toggleText(element) {
+            if (element.innerHTML === "JavaScript") {
+                element.innerHTML = "mind blowing";
+            } else {
+                element.innerHTML = "JavaScript";
+            }
+        }
+    </script>
+</body>
+</html>
