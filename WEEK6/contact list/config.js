@@ -1,9 +1,9 @@
-let rootpath = "https://mysite.itvasity.org/api/ContactBook";
-let apikey = checkapikey();
+let rootPath = "https://mysite.itvarsity.org/api/ContactBook/";
+let apiKey = checkApiKey();
 
-function checkapikey() {
-    if (!localStorage.getItem("apikey")) {
+function checkApiKey() {
+    if (!localStorage.getItem("apiKey")) {
         window.open("enter-api-key.html", "_self");
     }
-    return localStorage.getItem("apikey");
+    return localStorage.getItem("apiKey");
 }
